@@ -42,6 +42,7 @@ main{
     color: var(--color-1);
     margin-top: 90px;
     text-transform: lowercase;
+    resize: none;
 }
 
 ::placeholder{
@@ -53,6 +54,16 @@ main{
 
 .informacion{
     color: #495057;
+    font-size: 14px;
+}
+span{
+    display: inline-table;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    color: var(--fondo);
+    background-color: #495057;
+    border-radius: 46%;
     font-size: 14px;
 }
 
@@ -147,6 +158,7 @@ main{
     width: 295px;
     height: 540px;
     display: none;
+    resize: none;
     
 }
 
