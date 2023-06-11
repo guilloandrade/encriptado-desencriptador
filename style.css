@@ -228,6 +228,9 @@ span{
     main{
         margin-left: 0%;
     }
+    .logo {
+        width: 80px;
+            }
     .section-2{
         width: 90%;
         height: 45vw;
