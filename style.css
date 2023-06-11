@@ -4,17 +4,22 @@
    font-weight: 400;
    font-size: 30px;
    line-height: 150%;
-   overflow: hidden;
 }
 
 :root{
-    --fondo: #E5E5E5;
+    --fondo: #F3F5FC;
     --color-1: #0A3871;
     --color-2: #D8DFE8;
     --mensaje: #FFFFFF;
 }
 
-
+main{
+    display: flex;
+    margin-bottom: 1.25em;
+    margin-left: 2em;
+    height: 100%;
+    max-width: 1280px
+}
 
 .section-1{
     
@@ -22,25 +27,18 @@
 }
 
 .logo{
-     padding-top: 10px;
-    margin-left: 10px;
-    width: 10%;
+    padding-top: 1em;
+    margin-left: 1em;
+    width: 140px;
     height: 10%;
 
 }
 
-main{
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
-    margin-top: 20px;
-}
-
 .text-area{
-    height: 400px;
+    height: 62%;
     border: none;
     color: var(--color-1);
-    margin-top: 90px;
+    margin-top: 2.25em;
     text-transform: lowercase;
     resize: none;
 }
@@ -54,24 +52,19 @@ main{
 
 .informacion{
     color: #495057;
-    font-size: 14px;
+    font-size: 0.47em;
 }
 span{
     display: inline-table;
     text-align: center;
-    width: 19px;
-    height: 19px;
+    width: 0.7rem;
+    height: 0.7rem;
     color: var(--fondo);
     background-color: #495057;
     border-radius: 46%;
-    font-size: 14px;
+    font-size: 1em;
 }
 
-.botones{
-    display: flex;
-    margin-top: 18px;
-
-}
 
 .btn-encriptador{
     background-color: var(--color-1);
@@ -79,9 +72,9 @@ span{
     border-radius: 24px;
     color: var(--mensaje);
     cursor: pointer;
-    height: 67px;
-    width: 275px;
-    font-size: 25px;
+    height: 2.1875em;
+    width: 9.5em;
+    font-size: 1rem;
 }
 
 .btn-desencriptar{
@@ -90,10 +83,10 @@ span{
     border-radius: 24px;
     color: var(--color-1);
     cursor: pointer;
-    height: 67px;
-    width: 275px;
-    margin-left: 10px;
-    font-size: 25px;
+    height: 2.1875em;
+    width: 9.5em;
+    font-size: 1em;
+    margin-left: 0.6rem ;
 }
 
 .section-2{
@@ -102,27 +95,28 @@ span{
     background-repeat: no-repeat;
     background-position: center;
     background-size:80%;
-    background-position-y: 200px;
+    background-position-y: 6.5rem;
     border: none;
     border-radius: 24px;
     color: var(--color-1);
-    margin-left: 108px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.22);
+    margin-left: 3.75rem;
     margin-top: auto;
-    padding-left: 20px;
-    width: 320px;
-    height: 666px; 
+    padding-left: .25rem;
+    width: 23%;
+    height: 45vw; 
   
 }
 
 .mensaje1{
-    margin-top: 460px;
+    margin-top: 15.2rem;
     background: none;
-    width: 295px;
-    height: 58px;
+    width: 100%;
+    height: 1.625rem;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: .8em;
     line-height: 120%;
     text-align: center;
     color: #343A40;
@@ -134,12 +128,12 @@ span{
 
 .mensaje2{
     background: none;
-    width: 295px;
-    height: 48px;
+    width: 100%;
+    height: 1.5rem;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: .53em;
     line-height: 150%;
     text-align: center;
     color: #495057;
@@ -150,13 +144,13 @@ span{
 }
 
 .mensaje{
-    background: var(--mensaje);
+    background:var(--mensaje);
     border: none;
     color: var(--color-1);
-    margin-left: 0;
-    margin-top: 20px;
-    width: 295px;
-    height: 540px;
+    margin-left: .2em;
+    margin-top: .4em;
+    width: 93%;
+    height: 81%;
     display: none;
     resize: none;
     
@@ -172,15 +166,93 @@ span{
     border-radius: 24px;
     color: var(--color-1);
     cursor: pointer;
-    width: 275px;
-    height: 67px;
+    height: 2.1875rem;
+    width: 9.5rem;
     position: absolute;
-    margin-left: 15px;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+    font-size: 0.8em;
     display: none;
    
 }
+
+@media (max-width: 1280px){
+    * {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1024px){
+    * {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 768px){
+    main{
+        display: block;
+    }
+    .section-1 {
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+    }
+    .section-2 {
+        background-image: none;
+        margin-top: 1em;
+        display: flex;
+        width: 86%;
+        height: 33vw;
+        margin-left: 1em;
+        display: block;
+    }
+    .mensaje1{
+        padding: 1rem;
+        margin-top: 0;
+        width: 25rem;
+    }
+    .mensaje{
+        height: 60%;
+        padding: 0.6em;
+    }
+    .btn-copiar{
+        margin-left: 8.5rem;
+    }
+
+}
+@media (max-width: 576px){
+    *{
+        font-size: 16px;
+    }
+    main{
+        margin-left: 0%;
+    }
+    .section-2{
+        width: 90%;
+        height: 45vw;
+    }
+    .mensaje1{
+        padding-top: 1rem;
+        padding-left: 0;
+        width: auto;
+    }
+    .btn-desencriptar, .btn-encriptador{
+        font-size: 0.9em;
+    }
+    .mensaje {
+        width: 40%;
+        height: 24vw;
+        border-radius: 20px;
+    }
+    .btn-copiar {
+        margin-left: 4.5rem;
+    }
+}
+
+
+
+
 
 
 
