@@ -63,4 +63,6 @@ function copiarTexto() {
     mensaje.select();
     document.execCommand('copy');
     alert("El texto se ha copiado al portapapeles.");
+    mensaje.value="";
+    textArea.focus();
 }
