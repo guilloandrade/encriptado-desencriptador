@@ -105,7 +105,14 @@ span{
     padding-left: .25rem;
     width: 23%;
     height: 45vw; 
+    
   
+}
+
+.central-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mensaje1{
@@ -169,7 +176,6 @@ span{
     height: 2.1875rem;
     width: 8.7rem;
     position: absolute;
-    margin-left: 0.5rem;
     margin-top: 0.7rem;
     font-size: 0.8em;
     display: none;
@@ -216,9 +222,7 @@ span{
         height: 60%;
         padding: 0.6em;
     }
-    .btn-copiar{
-        margin-left: 8.5rem;
-    }
+    
 
 }
 @media (max-width: 576px){
@@ -247,9 +251,6 @@ span{
         width: 40%;
         height: 24vw;
         border-radius: 20px;
-    }
-    .btn-copiar {
-        margin-left: 4.5rem;
     }
 }
 

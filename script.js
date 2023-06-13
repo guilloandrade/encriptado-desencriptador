@@ -13,6 +13,11 @@ const mensaje2 = document.querySelector(".mensaje2");
 function btnEncriptador(){
     if (textArea.value.trim() === '') {
         alert("No ingresaste ningun texto");
+        mensaje.style.display = "none"
+        mensaje1.style.display = "block"
+        mensaje2.style.display = "block"
+        btncopiar.style.display = "none"
+
       } else {
         const textoEncriptado = encriptar(textArea.value)
         mensaje.style.display = "block"
@@ -38,6 +43,10 @@ function encriptar(stringEncriptado){
 function btnDesencriptador(){
     if (textArea.value.trim() === '') {
         alert("No ingresaste ningun texto");
+        mensaje.style.display = "none"
+        mensaje1.style.display = "block"
+        mensaje2.style.display = "block"
+        btncopiar.style.display = "none"
      } else {
         const textoEncriptado = desencriptar(textArea.value)
         mensaje.style.display = "block"
