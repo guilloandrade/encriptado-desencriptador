@@ -152,6 +152,7 @@ span{
 
 .mensaje{
     background:var(--mensaje);
+    border-radius: 20px;
     border: none;
     color: var(--color-1);
     margin-left: .2em;
@@ -248,7 +249,7 @@ span{
         font-size: 0.9em;
     }
     .mensaje {
-        width: 40%;
+        width: 90%;
         height: 24vw;
         border-radius: 20px;
     }
